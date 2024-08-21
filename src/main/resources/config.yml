@@ -1,0 +1,25 @@
+region-boost-disallowed: "sopra-spawn"
+
+items:
+  MAGIA_NERA:
+    item: STICK
+    name: "§c§lM§6§la§e§lg§a§li§3§lc §b§lW§d§la§5§ln§9§ld"
+    custom-model-data: 10060
+    lore:
+      - "§e§nBoosting Wand"
+    enchantments:
+      KNOCKBACK: 10
+      DAMAGE_ALL: 10
+      FIRE_ASPECT: 10
+    intensity-boost: 2
+    cooldown-boost: 3
+    usage: 15
+  MAGIA_BLU:
+    item: IRON_SWORD
+    name: "§fSpada di ferro fulminea"
+    lore:
+      - "§6Spada lancia fulmini"
+    enchantments:
+      CHANNELING: 10
+    intensity-boost: 4
+    cooldown-boost: 4

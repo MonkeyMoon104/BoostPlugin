@@ -1,0 +1,34 @@
+name: BoostPlugin
+version: '${project.version}'
+main: com.example.boostplugin.BoostPlugin
+api-version: '1.19'
+author: MonkeyMoon104
+description: Custom plugin per boost
+
+commands:
+  magia:
+    description: Give custom items to players
+    usage: /magia <subcommand> ...
+    permission: boostplugin.use
+    subcommands:
+      give:
+        description: Give a custom item to a player
+        usage: /magia give <item> <player>
+      reload:
+        description: Reload the plugin configuration
+        usage: /magia reload
+
+
+permissions:
+  boostplugin.use:
+    description: Permette agli utenti di givvare i custom item
+    default: op
+  boostplugin.reload:
+    description: Permette agli utenti di ricaricare la configurazione del plugin
+    default: op
+
+depend:
+  - WorldGuard
+  - FastAsyncWorldEdit
+  - CombatLogX
+
